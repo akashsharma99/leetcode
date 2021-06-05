@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/jump-game-ii/
+from typing import List
 class SolutionA:
     def jump(self, nums: List[int]) -> int:
         dp=[9999999 for _ in range(len(nums))]
@@ -30,4 +31,3 @@ class SolutionB:
         dp=[9999999 for _ in range(len(nums))]
         res=self.jumps(nums,0,dp)
         return res
-        
